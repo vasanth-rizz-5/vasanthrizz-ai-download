@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Primary Meta Tags -->
+<title>VasanthRizz AI - Google Play</title>
+<meta name="title" content="VasanthRizz AI - Google Play">
+<meta name="description" content="Experience the power of VasanthRizz AI — your smart assistant for image generation, voice interaction, and creative inspiration. Download now!">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vasanth-rizz-5.github.io/vasanthrizz-ai/">
+<meta property="og:title" content="VasanthRizz AI - Google Play">
+<meta property="og:description" content="Experience the power of VasanthRizz AI — your smart assistant for image generation, voice interaction, and creative inspiration. Download now!">
+<meta property="og:image" content="./img/3.png"> <!-- Replace with your actual image URL -->
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://vasanth-rizz-5.github.io/vasanthrizz-ai/">
+<meta name="twitter:title" content="VasanthRizz AI - Google Play">
+<meta name="twitter:description" content="Experience the power of VasanthRizz AI — your smart assistant for image generation, voice interaction, and creative inspiration. Download now!">
+<meta name="twitter:image" content="./img/3.png"> <!-- Replace with your actual image URL -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0;
+        }
+        
+        .app-content {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .app-header {
+            display: flex;
+            align-items: center;
+            
+            margin-bottom: 20px;
+        }
+        
+        .app-icon {
+            font-size: 50px;
+            color: #4285F4;
+            margin-right: 15px;
+        }
+        
+        .app-title {
+            font-size: 24px;
+            font-weight: 500;
+            color: #1967D2;
+        }
+        
+        .developer {
+            color: #5F6368;
+            font-size: 14px;
+            margin-top: 3px;
+        }
+        
+        .badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+        
+        .badge {
+            background-color: #f1f3f4;
+            border-radius: 16px;
+            padding: 5px 10px;
+            font-size: 12px;
+            color: #5F6368;
+        }
+        
+        .rating-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .stars {
+            color: #FFC107;
+            margin-right: 5px;
+            font-size: 16px;
+        }
+        
+        .rating-text {
+            font-size: 14px;
+            margin-right: 10px;
+            color: #1967D2;
+            font-weight: 500;
+        }
+        
+        .downloads {
+            font-size: 14px;
+            color: #5F6368;
+        }
+        
+        /* Rating Progress Bar */
+        .rating-distribution {
+            margin-bottom: 35px !important;
+            margin: 15px 0;
+        }
+        
+        .rating-bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .star-count {
+            width: 80px;
+            font-size: 14px;
+            color: #5F6368;
+        }
+        
+        .bar-container {
+            flex: 1;
+            height: 8px;
+            background-color: #f1f3f4;
+            border-radius: 4px;
+            margin: 0 10px;
+            overflow: hidden;
+        }
+        
+        .bar {
+            height: 100%;
+            background-color: #FFC107;
+            border-radius: 4px;
+        }
+        
+        .percentage {
+            width: 40px;
+            font-size: 14px;
+            color: #5F6368;
+        }
+        
+        .divider {
+            border-top: 1px solid #e0e0e0;
+            margin: 20px 0;
+        }
+        
+        /* Install Section */
+        .install-section {
+            margin-bottom: 20px;
+        }
+        
+        .install-options {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .website-btn {
+            background-color: #E8F0FE;
+            color: #1967D2;
+            border: none;
+            padding: 12px 0;
+            border-radius: 4px;
+            font-weight: 500;
+            cursor: pointer;
+            flex: 1;
+            text-align: center;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .install-btn {
+            background-color: #1967D2;
+            color: white;
+            border: none;
+            padding: 12px 0;
+            border-radius: 4px;
+            font-weight: 500;
+            cursor: pointer;
+            flex: 1;
+            text-align: center;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .install-btn:hover {
+            background-color: #174EA6;
+        }
+        
+        .website-btn:hover {
+            background-color: #D2E3FC;
+        }
+        
+        .share-options {
+            display: flex;
+            margin-bottom: 20px;
+            gap: 20px;
+        }
+        
+        .share-option {
+            display: flex;
+            align-items: center;
+            color: #5F6368;
+            font-size: 14px;
+            gap: 8px;
+        }
+        
+        .device-availability {
+            color: #5F6368;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        
+        .features {
+            font-size: 14px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .feature {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #202124;
+        }
+        
+        .feature i {
+            color: #5F6368;
+        }
+        
+        .generate-btns {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .generate-btn {
+            background-color: #f1f3f4;
+            border: none;
+            padding: 12px 0;
+            border-radius: 20px;
+            flex: 1;
+            cursor: pointer;
+            font-size: 14px;
+            color: #1967D2;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        
+        .generate-btn:hover {
+            background-color: #E8F0FE;
+        }
+        
+        /* About Section */
+        .about-section h2 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: #202124;
+        }
+        
+        .about-text {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #5F6368;
+        }
+        
+        /* Tabs */
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid #e0e0e0;
+            margin-bottom: 15px;
+        }
+        
+        .tab {
+            padding: 12px 16px;
+            font-size: 14px;
+            color: #5F6368;
+            cursor: pointer;
+        }
+        
+        .tab.active {
+            color: #1967D2;
+            border-bottom: 2px solid #1967D2;
+            font-weight: 500;
+        }
+        
+        /* Screenshots */
+        .screenshots {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            padding: 10px 0;
+            margin-bottom: 20px;
+            scrollbar-width: none;
+        }
+        
+        .screenshots::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .screenshot {
+            min-width: 200px;
+            height: 355px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            flex-shrink: 0;
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        /* Reviews Section */
+        .reviews-section {
+            background-color: #fff;
+            padding: 20px;
+        }
+        
+        .reviews-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 26px;
+        }
+        
+        .reviews-title {
+            
+            font-size: 18px;
+            color: #202124;
+        }
+        
+        .see-all {
+            color: #1967D2;
+            font-size: 14px;
+        }
+        
+        .review {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .review:last-child {
+            border-bottom: none;
+        }
+        
+        .review-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .reviewer-name {
+            font-weight: 500;
+            color: #202124;
+        }
+        
+        .review-date {
+            color: #5F6368;
+            font-size: 12px;
+            margin-left: 8px;
+        }
+        
+        .review-rating {
+            color: #FFC107;
+            margin-bottom: 8px;
+        }
+        
+        .review-text {
+            color: #202124;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+        
+        .review-helpful {
+            display: flex;
+            align-items: center;
+            color: #5F6368;
+            font-size: 12px;
+        }
+        
+        .review-actions {
+            display: flex;
+            gap: 15px;
+            margin-top: 8px;
+        }
+        
+        .review-action {
+            color: #5F6368;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        /* Animations */
+        @keyframes downloadAnimation {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+            100% { transform: translateY(0); }
+        }
+
+        
+        .downloading {
+            animation: downloadAnimation 1s infinite;
+        }
+        
+        @keyframes downloadAnimation {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.05); opacity: 0.7; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- App Content -->
+    <div class="app-content">
+        <div class="app-header">
+            <i class="fas fa-robot app-icon"></i>
+            <div>
+                <h1 class="app-title" onclick="window.open('https://vasanth-rizz-5.github.io/vasanthrizz-ai/', '_blank')" style="cursor: pointer;">
+                    VasanthRizz AI
+                </h1>
+                
+                
+                <div class="developer" onclick="window.open('https://vasanth-rizz-5.github.io/vasanthrizz/', '_blank')" style="cursor: pointer;">VasanthRizz official</div>
+            </div>
+        </div>
+        
+        <div class="badges">
+            <span class="badge">In-app purchases</span>
+            <span class="badge">SOC++</span>
+            <span class="badge">Downloads</span>
+        </div>
+        
+        <div class="rating-section">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="rating-text">4.6</span>
+            <span class="downloads">2.5K downloads</span>
+
+
+            
+        </div>
+        
+      
+        
+        <div class="divider"></div>
+        
+        <div class="install-section">
+            <div class="install-options">
+                <button class="website-btn" id="visitWebsite">
+                    <i class="fas fa-external-link-alt"></i> Visit Website
+                </button>
+                <button class="install-btn" id="installBtn">
+                    <i class="fas fa-download"></i> Install
+                </button>
+            </div>
+            
+          
+            
+            <div class="device-availability">
+                Upcoming Updates
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-image"></i>
+                    <span>Image generation is available for all time.</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-microphone"></i>
+                    <span>Check in voice mode.</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Find creative inspiration.</span>
+                </div>
+            </div>
+            
+            
+           
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="about-section">
+            <h2>About this app</h2>
+            <p class="about-text">
+                Introducing VasanthRizz AI for Android: The latest advancements in AI technology at your fingertips.
+                This official app is free, syncs your history across devices, and provides intelligent responses
+                to all your queries. Experience the future of AI conversation with our cutting-edge features.
+            </p>
+        </div>
+        
+        <div class="tabs">
+            <div class="tab active">Preview</div>
+          
+        </div>
+        
+        <div class="screenshots">
+            <div class="screenshot" style="background-image: url('./img/1.png')"></div>
+            <div class="screenshot" style="background-image: url('./img/2.png')"></div>
+            <div class="screenshot" style="background-image: url('./img/3.png')"></div>
+            <div class="screenshot" style="background-image: url('./img/4.png')"></div>
+        </div>
+    </div>
+    
+    <!-- Reviews Section -->
+    <div class="reviews-section">
+
+
+        
+        <div class="reviews-header">
+            <h2 class="reviews-title">Ratings and reviews</h2>
+            
+            <a href="#" class="see-all">See all</a>
+        </div>
+
+          <!-- Rating Progress Bar -->
+          <div class="rating-distribution">
+            <div class="rating-bar">
+                <div class="star-count">5 stars</div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 75%;"></div>
+                </div>
+                <div class="percentage">75%</div>
+            </div>
+            <div class="rating-bar">
+                <div class="star-count">4 stars</div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 15%;"></div>
+                </div>
+                <div class="percentage">15%</div>
+            </div>
+            <div class="rating-bar">
+                <div class="star-count">3 stars</div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 5%;"></div>
+                </div>
+                <div class="percentage">5%</div>
+            </div>
+            <div class="rating-bar">
+                <div class="star-count">2 stars</div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 3%;"></div>
+                </div>
+                <div class="percentage">3%</div>
+            </div>
+            <div class="rating-bar">
+                <div class="star-count">1 star</div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 2%;"></div>
+                </div>
+                <div class="percentage">2%</div>
+            </div>
+        </div>
+        
+        <div class="review">
+            <div class="review-header">
+                <div class="reviewer-name">Guyx</div>
+                <div class="review-date">22 July 2025</div>
+            </div>
+            <div class="review-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="review-text">
+                Could you please bring back the draft typing? It is quite essential! You know, like, 
+                for example, if I have to write a very large book. I can easily break it down into 
+                small voice to text messages, but now I cannot. Please bring back that mic option 
+                to edit and speak in between. Please bring back this feature. The feature actually 
+                helps us drastically improve the productivity.
+            </p>
+            <div class="review-helpful">
+                9 people found this review helpful
+            </div>
+            <div class="review-actions">
+                <div class="review-action">
+                    <i class="far fa-thumbs-up"></i> Yes
+                </div>
+                <div class="review-action">
+                    <i class="far fa-thumbs-down"></i> No
+                </div>
+            </div>
+        </div>
+        
+        <div class="review">
+            <div class="review-header">
+                <div class="reviewer-name">Hannah Sunray</div>
+                <div class="review-date">20 July 2025</div>
+            </div>
+            <div class="review-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">
+                I love this app, I do, for writing fiction stories and chaotic scenes. 
+                But lately, this app has been acting odd, which is a bit frustrating. 
+                Still, the core functionality is amazing when it works properly.
+            </p>
+            <div class="review-helpful">
+                5 people found this review helpful
+            </div>
+            <div class="review-actions">
+                <div class="review-action">
+                    <i class="far fa-thumbs-up"></i> Yes
+                </div>
+                <div class="review-action">
+                    <i class="far fa-thumbs-down"></i> No
+                </div>
+            </div>
+        </div>
+        
+        <div class="review">
+            <div class="review-header">
+                <div class="reviewer-name">TechEnthusiast</div>
+                <div class="review-date">18 July 2025</div>
+            </div>
+            <div class="review-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">
+                This is hands down the best AI assistant app available right now. 
+                The voice recognition is incredibly accurate and the response time 
+                is impressive. The recent updates have made it even better!
+            </p>
+            <div class="review-helpful">
+                12 people found this review helpful
+            </div>
+            <div class="review-actions">
+                <div class="review-action">
+                    <i class="far fa-thumbs-up"></i> Yes
+                </div>
+                <div class="review-action">
+                    <i class="far fa-thumbs-down"></i> No
+                </div>
+            </div>
+        </div>
+        
+        <div class="review">
+            <div class="review-header">
+                <div class="reviewer-name">CreativeWriter</div>
+                <div class="review-date">15 July 2025</div>
+            </div>
+            <div class="review-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p class="review-text">
+                Fantastic for brainstorming and overcoming writer's block. 
+                The image generation feature is particularly useful for 
+                visualizing scenes and characters. Would love to see more 
+                customization options in future updates.
+            </p>
+            <div class="review-helpful">
+                7 people found this review helpful
+            </div>
+            <div class="review-actions">
+                <div class="review-action">
+                    <i class="far fa-thumbs-up"></i> Yes
+                </div>
+                <div class="review-action">
+                    <i class="far fa-thumbs-down"></i> No
+                </div>
+            </div>
+        </div>
+        
+        <div class="review">
+            <div class="review-header">
+                <div class="reviewer-name">AppCritic</div>
+                <div class="review-date">10 July 2025</div>
+            </div>
+            <div class="review-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="review-text">
+                Very capable AI with excellent natural language processing. 
+                The interface could use some refinement, but the core technology 
+                is solid. The sync between devices works seamlessly.
+            </p>
+            <div class="review-helpful">
+                4 people found this review helpful
+            </div>
+            <div class="review-actions">
+                <div class="review-action">
+                    <i class="far fa-thumbs-up"></i> Yes
+                </div>
+                <div class="review-action">
+                    <i class="far fa-thumbs-down"></i> No
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const installBtn = document.getElementById('installBtn');
+        installBtn.addEventListener('click', function () {
+            this.classList.add('downloading');
+            this.innerHTML = '<i class="fas fa-download"></i> Downloading...';
+    
+            // Trigger APK download
+            const link = document.createElement('a');
+            link.href = './img/vasanthrizzai.apk'; // your APK file path
+            link.download = 'vasanthrizzai.apk';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+    
+            // Reset after animation
+            setTimeout(() => {
+                this.classList.remove('downloading');
+                this.innerHTML = '<i class="fas fa-download"></i> Install';
+                alert('VasanthRizz AI has been installed successfully!');
+            }, 7000);
+        });
+        
+        // Visit website link
+        document.getElementById('visitWebsite').addEventListener('click', function() {
+            window.open('https://vasanth-rizz-5.github.io/vasanthrizz-ai/', '_blank');
+        });
+    </script>
+</body>
+</html>
